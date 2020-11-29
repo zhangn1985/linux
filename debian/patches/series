@@ -128,3 +128,33 @@ bugfix/all/tools-include-uapi-fix-errno.h.patch
 debian/overlayfs-permit-mounts-in-userns.patch
 
 # ABI maintenance
+
+
+# khadas patches
+khadas/0001-HACK-set-meson-gx-cma-pool-to-768MB.patch
+khadas/0002-HACK-set-meson-g12-cma-pool-to-768MB.patch
+khadas/0004-HACK-arm64-dts-meson-gx-add-ATF-BL32-reserved-memory.patch
+khadas/0009-HACK-mmc-core-always-re-init-sdcards-to-set-default-.patch
+khadas/0010-clk-meson-g12a-fix-gp0-and-hifi-ranges.patch
+khadas/0011-ASoC-meson-gx-card-fix-sound-dai-dt-schema.patch
+khadas/0012-ASoC-meson-convert-axg-tdm-interface-to-schema.patch
+khadas/0013-ASoC-meson-convert-axg-tdm-formatters-to-schema.patch
+khadas/0014-ASoC-meson-convert-axg-pdm-to-schema.patch
+khadas/0015-ASoC-meson-convert-axg-fifo-to-schema.patch
+khadas/0016-ASoC-meson-convert-axg-spdif-input-to-schema.patch
+khadas/0017-ASoC-meson-convert-axg-spdif-output-to-schema.patch
+khadas/0018-ASoC-meson-convert-g12a-tohdmitx-control-to-schema.patch
+khadas/0019-ASoC-meson-convert-axg-sound-card-control-to-schema.patch
+khadas/0020-WIP-arm64-dts-meson-add-common-hdmi-hdmi-spdif-dtsi-.patch
+khadas/0021-WIP-arm64-dts-meson-add-common-hdmi-hdmi-spdif-dtsi-.patch
+khadas/0022-WIP-arm64-dts-meson-add-audio-playback-to-khadas-vim.patch
+khadas/0023-WIP-arm64-dts-meson-add-audio-playback-to-p212-s905x.patch
+khadas/0028-arm64-dts-VIM1-enable-RTC.patch
+khadas/0029-arm64-dts-VIM2-enable-RTC.patch
+khadas/0030-arm64-dts-sdio-VIM1-VIM2-change-freq-to-100MHz.patch
+khadas/0031-arm64-dts-SDIO-VIM2-enable-cap-sd-highspeed.patch
+khadas/0035-rockchip_khadas_edge_add_missed_spiflash.patch
+khadas/0036-rockchip_khadas_edge_add_ir_recv.patch
+khadas/0037-arm64-dts-SDIO-VIM3-disable-sd-uhs-sdr50-to-fix-AP63.patch
+khadas/0038-arm64-dts-VIM2-fix-broken-ethernet-interface-up-down.patch
+khadas/drm-rockchip-Require-the-YTR-modifier-for-AFBC.patch
