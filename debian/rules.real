@@ -82,10 +82,9 @@ binary-arch-arch: \
 	$(call if_package, liblockdep-dev,               install-liblockdep) \
 	$(call if_package, hyperv-daemons,               install-hyperv-daemons)
 
+build-indep:
+
 binary-indep: \
-	$(call if_package, $(SOURCE_BASENAME)-source-$(VERSION), install-source) \
-	$(if $(filter-out x-$(VERSION),x$(SOURCE_SUFFIX)), \
-	  $(call if_package, $(SOURCE_BASENAME)-source$(SOURCE_SUFFIX), install-source-meta)) \
 	$(call if_package, $(SOURCE_BASENAME)-support-$(ABINAME), install-support) \
 	$(call if_package, lockdep,                      install-lockdep)
 
