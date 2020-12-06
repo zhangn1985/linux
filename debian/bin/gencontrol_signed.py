@@ -69,14 +69,9 @@ class Gencontrol(Base):
         self.installer_packages = {}
 
         if os.getenv('DEBIAN_KERNEL_DISABLE_INSTALLER'):
-            if self.changelog[0].distribution == 'UNRELEASED':
-                import warnings
-                warnings.warn('Disable installer modules on request '
+            import warnings
+            warnings.warn('Disable installer modules on request '
                               '(DEBIAN_KERNEL_DISABLE_INSTALLER set)')
-            else:
-                raise RuntimeError(
-                    'Unable to disable installer modules in release build '
-                    '(DEBIAN_KERNEL_DISABLE_INSTALLER set)')
         elif self.config.merge('packages').get('installer', True):
             # Add udebs using kernel-wedge
             kw_env = os.environ.copy()

@@ -76,13 +76,9 @@ class Gencontrol(Base):
         for env, attr, desc in self.env_flags:
             setattr(self, attr, False)
             if os.getenv(env):
-                if self.changelog[0].distribution == 'UNRELEASED':
-                    import warnings
-                    warnings.warn(f'Disable {desc} on request ({env} set)')
-                    setattr(self, attr, True)
-                else:
-                    raise RuntimeError(
-                        f'Unable to disable {desc} in release build ({env} set)')
+                import warnings
+                warnings.warn(f'Disable {desc} on request ({env} set)')
+                setattr(self, attr, True)
 
     def _setup_makeflags(self, names, makeflags, data):
         for src, dst, optional in names:
