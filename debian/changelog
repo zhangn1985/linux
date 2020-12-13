@@ -1,3 +1,47 @@
+linux (5.10~rc7-1~exp1) experimental; urgency=medium
+
+  * New upstream release candidate
+
+  [ Vincent Blut ]
+  * net/sched: Enable NET_SCH_ETS and NET_SCH_FQ_PIE as modules.
+
+  [ Bastian Blank ]
+  * Enable SOUNDWIRE, SOUNDWIRE_INTEL, SOUNDWIRE_QCOM.
+  * Enable SND_SOC_RT700_SDW, SND_SOC_RT711_SDW, SND_SOC_RT715_SDW.
+    (closes: #976791)
+  * [x86] Enable SND_SOC_SOF_INTEL_SOUNDWIRE_LINK.
+  * [x86] Enable SND_SOC_SOF_COMETLAKE_LP_SUPPORT,
+    SND_SOC_SOF_ELKHARTLAKE_SUPPORT, SND_SOC_SOF_JASPERLAKE_SUPPORT.
+  * [cloud] Disable some further filesystems. (closes: #977005)
+  * [cloud] Disable NET_VENDOR_MICROCHIP.
+  * [cloud] Disable ICE, IGC.
+  * [amd64] Make GVE module.
+  * [x86] Enable X86_CPU_RESCTRL.
+  * [amd64/cloud] Disable INFINIBAND_USNIC.
+  * Enable PSTORE_BLK.
+  * Set SQUASHFS_FILE_DIRECT, SQUASHFS_DECOMP_MULTI_PERCPU.
+  * Disable EFI_VARS.
+  * [x86] Enable APPLE_PROPERTIES.
+  * Enable CRYPTO_ECRDSA, CRYPTO_CURVE25519, disable CRYPTO_SM2.
+  * Enable CRYPTO_CFB, CRYPTO_OFB, CRYPTO_KEYWRAP, CRYPTO_ADIANTUM.
+  * Enable CRYPTO_BLAKE2S, disable CRYPTO_SM3.
+  * Enable CRYPTO_AES_TI, disable CRYPTO_SM4.
+  * Enable CRYPTO_DRBG_HASH, CRYPTO_DRBG_CTR.
+  * Enable SND_SOC_MAX98373_SDW, SND_SOC_RT1308_SDW, SND_SOC_RT5682_SDW.
+  * Enable SND_SOC_INTEL_SOUNDWIRE_SOF_MACH.
+  * Enable ATH11K. (closes: #977004)
+  * [arm64] Enable most accelerated crypto modules. (closes: #976635)
+  * [s390x] Disable IIO.
+  * Enable BLK_CGROUP_IOCOST.
+  * Enable CGROUP_HUGETLB.
+
+  [ Ben Hutchings ]
+  * Fix missing module.lds for building out-of-tree modules (Closes: #975571)
+    - debian/rules.real: Install module.lds under arch directory
+    - kbuild: Look for module.lds under arch directory too
+
+ -- Bastian Blank <waldi@debian.org>  Fri, 11 Dec 2020 11:16:29 +0100
+
 linux (5.10~rc6-1~exp1) experimental; urgency=medium
 
   * New upstream release candidate
