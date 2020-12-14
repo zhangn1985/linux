@@ -1,3 +1,16 @@
+linux (5.10-1~exp1) UNRELEASED; urgency=medium
+
+  * New upstream release: https://kernelnewbies.org/Linux_5.10
+
+  [ Salvatore Bonaccorso ]
+  * [rt] Update to 5.10-rc7-rt16
+
+  [ Ben Hutchings ]
+  * userns: Enable unprivileged user namespaces by default (Closes: #898446)
+    (sysctl: kernel.unprivileged_userns_clone)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 13 Dec 2020 11:55:13 +0100
+
 linux (5.10~rc7-1~exp1) experimental; urgency=medium
 
   * New upstream release candidate
