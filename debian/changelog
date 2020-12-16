@@ -1,13 +1,33 @@
-linux (5.10-1~exp1) UNRELEASED; urgency=medium
+linux (5.10.1-1~exp1) UNRELEASED; urgency=medium
 
   * New upstream release: https://kernelnewbies.org/Linux_5.10
+  * New upstream stable update:
+    https://www.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10.1
 
   [ Salvatore Bonaccorso ]
-  * [rt] Update to 5.10-rc7-rt16
+  * [rt] Update to 5.10-rt17
 
   [ Ben Hutchings ]
   * userns: Enable unprivileged user namespaces by default (Closes: #898446)
     (sysctl: kernel.unprivileged_userns_clone)
+
+  [ Bastian Blank ]
+  * Enable all Industrial I/O accelerometers. (closes: #975572)
+  * Enable all Industrial I/O ADC.
+  * Enable all Industrial I/O DAC.
+  * Enable all Industrial I/O digital gyroscopes.
+  * Enable all Industrial I/O IMU.
+  * Enable all Industrial I/O light sensors.
+  * Enable all Industrial I/O magnetometers.
+  * Enable all Industrial I/O pressure sensors.
+  * Enable all Industrial I/O proximity sensors.
+  * Enable all Industrial I/O temperatur sensors.
+  * Enable BT_LEDS.
+  * Enable remaining LEDS_TRIGGER_*.
+  * Enable ZONEFS_FS.
+  * Gemerate BTF debug info: (closes: #973870)
+    - Enable DEBUG_INFO_BTF.
+    - Build-depend on dwarves.
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 13 Dec 2020 11:55:13 +0100
 
