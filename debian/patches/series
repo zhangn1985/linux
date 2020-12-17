@@ -185,8 +185,6 @@ khadas/0061-FROMLIST-RFCv2-net-stmmac-dwmac-meson8b-move-RGMII-d.patch
 khadas/0062-FROMLIST-RFCv2-net-stmmac-dwmac-meson8b-add-support-.patch
 khadas/0063-WIP-mmc-meson-gx-remove-IRQF_ONESHOT-tgx-alternate-f.patch
 khadas/0064-WIP-media-meson-vdec-add-support-for-HEVC-decoding.patch
-khadas/0065-WIP-drm-bridge-dw-hdmi-i2s-HBR-audio-experiments.patch
-khadas/0066-WIP-ASoC-hdmi-codec-reorder-channel-allocation-list.patch
 khadas/0072-arm64-dts-meson-add-common-SM1-ac2xx-dtsi.patch
 khadas/0080-arm64-dts-SDIO-VIM3L-disable-sd-uhs-sdr50-to-fix.patch
 khadas/0081-WIP-arm64-dts-meson-add-common-hdmi-hdmi-spdif-dtsi-.patch
