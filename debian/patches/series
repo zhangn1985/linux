@@ -146,7 +146,6 @@ khadas/0014-FROMGIT-clk-add-api-to-get-clk-consumer-from-clk_hw.patch
 khadas/0015-FROMGIT-clk-meson-g12-drop-use-of-__clk_lookup.patch
 khadas/0016-FROMGIT-drm-panfrost-Support-cache-coherent-integrat.patch
 khadas/0017-FROMGIT-drm-panfrost-Make-sure-MMU-context-lifetime-.patch
-khadas/0018-FROMGIT-drm-panfrost-Fix-job-timeout-handling.patch
 khadas/0019-FROMGIT-drm-panfrost-Don-t-corrupt-the-queue-mutex-o.patch
 khadas/0020-FROMGIT-drm-sched-Avoid-infinite-waits-in-the-drm_sc.patch
 khadas/0021-FROMGIT-iommu-io-pgtable-arm-Support-coherency-for-M.patch
@@ -155,7 +154,6 @@ khadas/0023-FROMGIT-mmc-meson-gx-drop-of_match_ptr-from-of_devic.patch
 khadas/0024-FROMLIST-v1-clk-add-devm-variant-of-clk_notifier_reg.patch
 khadas/0025-FROMLIST-v1-clk-meson-g12-use-devm-variant-to-regist.patch
 khadas/0026-FROMLIST-v1-drm-panfrost-Replace-devm_reset_control_.patch
-khadas/0027-FROMLIST-v5-drm-panfrost-Move-the-GPU-reset-bits-out.patch
 khadas/0028-FROMLIST-v1-drm-panfrost-fix-reference-leak-in-panfr.patch
 khadas/0029-FROMLIST-v1-drm-lima-fix-reference-leak-in-lima_pm_b.patch
 khadas/0030-FROMLIST-v1-iio-remove-unneeded-break.patch
@@ -169,7 +167,6 @@ khadas/0040-FROMLIST-v3-arm64-dts-meson-add-audio-playback-to-kh.patch
 khadas/0045-FROMLIST-v1-arm64-dts-meson-enable-rtc-node-on-Khada.patch
 khadas/0046-FROMLIST-v1-arm64-dts-meson-Add-capacity-dmips-mhz-a.patch
 khadas/0047-FROMLIST-v1-arm64-dts-meson-add-rtc-aliases-to-meson.patch
-khadas/0048-FROMLIST-v1-arm64-dts-meson-fix-spi-max-frequency-on.patch
 khadas/0049-FROMLIST-v1-arm64-dts-meson-update-the-Khadas-VIM3-3.patch
 khadas/0051-FROMLIST-v2-media-rc-add-keymap-for-KHAMSIN-remote.patch
 khadas/0052-FROMLIST-v3-media-rc-add-keymap-for-pine64-remote.patch
@@ -197,5 +194,4 @@ khadas/0087-rockchip_khadas_edge_add_missed_spiflash.patch
 khadas/0088-rockchip_khadas_edge_add_ir_recv.patch
 khadas/0089-arm64-dts-VIM3-VIM3L-fix-memory-size-for-vendor-u-bo.patch
 khadas/0090-drm-meson-init-g12a-osd2-yuv2rgb-instead-of-osd12-pa.patch
-khadas/0091-arm64-dts-VIM2-fix-broken-ethernet-interface-up-down.patch
 khadas/drm-rockchip-Require-the-YTR-modifier-for-AFBC.patch
