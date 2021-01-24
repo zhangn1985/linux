@@ -148,7 +148,6 @@ khadas/0014-FROMGIT-clk-add-api-to-get-clk-consumer-from-clk_hw.patch
 khadas/0015-FROMGIT-clk-meson-g12-drop-use-of-__clk_lookup.patch
 khadas/0016-FROMGIT-drm-panfrost-Support-cache-coherent-integrat.patch
 khadas/0017-FROMGIT-drm-panfrost-Make-sure-MMU-context-lifetime-.patch
-khadas/0019-FROMGIT-drm-panfrost-Don-t-corrupt-the-queue-mutex-o.patch
 khadas/0020-FROMGIT-drm-sched-Avoid-infinite-waits-in-the-drm_sc.patch
 khadas/0021-FROMGIT-iommu-io-pgtable-arm-Support-coherency-for-M.patch
 khadas/0022-FROMGIT-mmc-meson-mx-sdio-replace-spin_lock_irqsave-.patch
