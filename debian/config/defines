@@ -2,6 +2,7 @@
 abiname: khadas
 ignore-changes:
  __cpuhp_*
+ __udp_gso_segment
  bpf_analyzer
  cxl_*
  dax_flush
@@ -97,6 +98,10 @@ ignore-changes:
  module:arch/powerpc/kvm/*
  module:arch/s390/kvm/*
  module:arch/x86/kvm/*
+# used only within arch/s390
+ uv_info
+# Not used in OOT
+ xhci_init_driver
 
 [base]
 arches:
@@ -152,7 +157,7 @@ part-long-up: This kernel is not suitable for SMP (multi-processor,
 
 [image]
 initramfs-generators: initramfs-tools initramfs-fallback
-breaks: wireless-regdb (<< 2019.06.03-1~)
+breaks: fwupdate (<< 12-7), wireless-regdb (<< 2019.06.03-1~)
 recommends: apparmor
 
 [relations]

@@ -168,6 +168,7 @@ CONFIG_CRYPTO_USER_API_HASH=m
 CONFIG_CRYPTO_USER_API_SKCIPHER=m
 CONFIG_CRYPTO_USER_API_RNG=m
 CONFIG_CRYPTO_USER_API_AEAD=m
+# CONFIG_CRYPTO_USER_API_ENABLE_OBSOLETE is not set
 
 ##
 ## file: crypto/asymmetric_keys/Kconfig
@@ -2954,6 +2955,7 @@ CONFIG_EEPROM_MAX6875=m
 CONFIG_EEPROM_93CX6=m
 # CONFIG_EEPROM_93XX46 is not set
 # CONFIG_EEPROM_IDT_89HPESX is not set
+CONFIG_EEPROM_EE1004=m
 
 ##
 ## file: drivers/misc/genwqe/Kconfig
@@ -3912,6 +3914,7 @@ CONFIG_USB_IPHETH=m
 CONFIG_USB_SIERRA_NET=m
 CONFIG_USB_VL600=m
 CONFIG_USB_NET_CH9200=m
+CONFIG_USB_NET_AQC111=m
 
 ##
 ## file: drivers/net/wan/Kconfig
@@ -6418,6 +6421,7 @@ CONFIG_ADVISE_SYSCALLS=y
 CONFIG_MEMBARRIER=y
 CONFIG_KALLSYMS=y
 # CONFIG_KALLSYMS_ALL is not set
+CONFIG_BPF_LSM=y
 CONFIG_BPF_SYSCALL=y
 # CONFIG_BPF_JIT_ALWAYS_ON is not set
 CONFIG_USERFAULTFD=y
@@ -6962,6 +6966,11 @@ CONFIG_CAN_RAW=m
 CONFIG_CAN_BCM=m
 CONFIG_CAN_GW=m
 CONFIG_CAN_ISOTP=m
+
+##
+## file: net/can/j1939/Kconfig
+##
+CONFIG_CAN_J1939=m
 
 ##
 ## file: net/ceph/Kconfig
@@ -7714,6 +7723,7 @@ CONFIG_FORTIFY_SOURCE=y
 ## choice: First legacy 'major LSM' to be initialized
 CONFIG_DEFAULT_SECURITY_APPARMOR=y
 ## end choice
+CONFIG_LSM="lockdown,yama,loadpin,safesetid,integrity,apparmor,selinux,smack,tomoyo"
 
 ##
 ## file: security/apparmor/Kconfig
