@@ -60,39 +60,18 @@ $(if $(filter $(1),$(packages_enabled)),$(2))
 endef
 
 build-arch-arch: \
-	$(call if_package, linux-kbuild-$(VERSION),      build-kbuild) \
-	$(call if_package, linux-perf-$(VERSION),        build-perf) \
-	$(call if_package, linux-bootwrapper-$(ABINAME), build-bootwrapper) \
-	$(call if_package, bpftool,                      build-bpftool) \
-	$(call if_package, usbip,                        build-usbip) \
-	$(call if_package, linux-cpupower,               build-cpupower) \
-	$(call if_package, liblockdep-dev,               build-liblockdep) \
-	$(call if_package, hyperv-daemons,               build-hyperv-daemons)
+	$(call if_package, linux-kbuild-$(VERSION),      build-kbuild)
 binary-arch-arch: \
-	$(call if_package, $(SOURCE_BASENAME)-config-$(VERSION), install-config_$(ARCH)) \
-	$(call if_package, linux-libc-dev,               install-libc-dev_$(ARCH)) \
-	$(call if_package, linux-kbuild-$(VERSION),      install-kbuild) \
-	$(call if_package, linux-perf-$(VERSION),        install-perf) \
-	$(if $(filter-out x-$(VERSION),x$(SOURCE_SUFFIX)), \
-	  $(call if_package, linux-perf$(SOURCE_SUFFIX), install-perf-meta)) \
-	$(call if_package, linux-bootwrapper-$(ABINAME), install-bootwrapper) \
-	$(call if_package, bpftool,                      install-bpftool) \
-	$(call if_package, usbip,                        install-usbip) \
-	$(call if_package, linux-cpupower,               install-cpupower) \
-	$(call if_package, liblockdep-dev,               install-liblockdep) \
-	$(call if_package, hyperv-daemons,               install-hyperv-daemons)
+	$(call if_package, linux-kbuild-$(VERSION),      install-kbuild)
 
 build-indep:
 
 binary-indep: \
-	$(call if_package, $(SOURCE_BASENAME)-support-$(ABINAME), install-support) \
-	$(call if_package, lockdep,                      install-lockdep)
+	$(call if_package, $(SOURCE_BASENAME)-support-$(ABINAME), install-support)
 
 binary-arch-flavour: \
 	$(call if_package, $(IMAGE_PACKAGE_NAME),        install-image_$(ARCH)_$(FEATURESET)_$(FLAVOUR)) \
 	$(call if_package, linux-image$(SOURCE_SUFFIX)$(LOCALVERSION), install-image-meta_$(ARCH)_$(FEATURESET)_$(FLAVOUR)) \
-	$(call if_package, linux-image-$(ABINAME)$(LOCALVERSION)-dbg, install-image-dbg_$(ARCH)_$(FEATURESET)_$(FLAVOUR)) \
-	$(call if_package, linux-image$(SOURCE_SUFFIX)$(LOCALVERSION)-dbg, install-image-dbg-meta_$(ARCH)_$(FEATURESET)_$(FLAVOUR)) \
 	$(call if_package, linux-headers-$(ABINAME)$(LOCALVERSION), install-headers_$(ARCH)_$(FEATURESET)_$(FLAVOUR)) \
 	$(call if_package, linux-headers$(SOURCE_SUFFIX)$(LOCALVERSION), install-headers-meta_$(ARCH)_$(FEATURESET)_$(FLAVOUR))
 
