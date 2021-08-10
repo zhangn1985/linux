@@ -1,9 +1,30 @@
-linux (5.10.46-5) UNRELEASED; urgency=medium
+linux (5.13.9-1~exp2) experimental; urgency=medium
 
+  * Fix linux-cpupower installation.
+
+ -- Bastian Blank <waldi@debian.org>  Tue, 10 Aug 2021 21:12:41 +0200
+
+linux (5.13.9-1~exp1) experimental; urgency=medium
+
+  * New upstream release: https://kernelnewbies.org/Linux_5.11
+  * New upstream release: https://kernelnewbies.org/Linux_5.12
+  * New upstream release: https://kernelnewbies.org/Linux_5.13
+
+  [ Bastian Blank ]
   * Always build-depend on native libelf-dev.
   * Specify trusted certs file in package config.
+  * Enable PROC_VMCORE.
+  * Enable SECURITYFS.
+  * Re-enable IMA. (closes: #972459)
+  * [x86] Enable AMD_MEM_ENCRYPT. (closes: #983586, #989040)
+  * Enable UNICODE. (closes: #985689)
+  * Enable CGROUP_MISC.
+  * [x86] Enable PINCTRL_ALDERLAKE, PINCTRL_ELKHARTLAKE, PINCTRL_EMMITSBURG,
+    PINCTRL_JASPERLAKE, PINCTRL_LAKEFIELD.
+  * [amd64] Enable MICROSOFT_MANA.
+  * [arm64] Enable GVE. (closes: #991835)
 
- -- Bastian Blank <waldi@debian.org>  Thu, 27 May 2021 12:25:51 +0200
+ -- Bastian Blank <waldi@debian.org>  Mon, 09 Aug 2021 18:35:43 +0200
 
 linux (5.10.46-4) unstable; urgency=medium
 

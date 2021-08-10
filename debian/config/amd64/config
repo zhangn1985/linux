@@ -114,11 +114,6 @@ CONFIG_DRM_I915_GVT=y
 CONFIG_DRM_I915_GVT_KVMGT=m
 
 ##
-## file: drivers/hwmon/Kconfig
-##
-CONFIG_SENSORS_AMD_ENERGY=m
-
-##
 ## file: drivers/i2c/Kconfig
 ##
 CONFIG_I2C_STUB=m
@@ -161,6 +156,12 @@ CONFIG_NET_VENDOR_GOOGLE=y
 CONFIG_GVE=m
 
 ##
+## file: drivers/net/ethernet/microsoft/Kconfig
+##
+CONFIG_NET_VENDOR_MICROSOFT=y
+CONFIG_MICROSOFT_MANA=m
+
+##
 ## file: drivers/net/wireless/intel/ipw2x00/Kconfig
 ##
 # CONFIG_IPW2100 is not set
@@ -194,7 +195,6 @@ CONFIG_SPI_PXA2XX=m
 ## file: drivers/tty/Kconfig
 ##
 CONFIG_MOXA_INTELLIO=m
-CONFIG_ISI=m
 
 ##
 ## file: drivers/vfio/mdev/Kconfig
@@ -251,9 +251,4 @@ CONFIG_LSM_MMAP_MIN_ADDR=65536
 CONFIG_SND_SOC_AMD_ACP3x=m
 CONFIG_SND_SOC_AMD_RENOIR=m
 CONFIG_SND_SOC_AMD_RENOIR_MACH=m
-
-##
-## file: sound/soc/sof/intel/Kconfig
-##
-CONFIG_SND_SOC_SOF_COMETLAKE_LP_SUPPORT=y
 
